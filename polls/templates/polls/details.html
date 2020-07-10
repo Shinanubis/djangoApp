@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>{{ question.question_text }}</h1>
+    <ul>
+        {% for choice in question.choice_set.all %}
+            <input type="checkbox">{{ choice.choice_text }}<br>
+        {% endfor %}
+    </ul>
+</body>
+</html>
